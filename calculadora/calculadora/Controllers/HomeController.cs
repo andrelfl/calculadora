@@ -13,7 +13,7 @@ namespace calculadora.Controllers
         {
             return View();
         }
-    
+
         // POST: Home
         [HttpPost]
         public ActionResult Index(string bt, string display)
