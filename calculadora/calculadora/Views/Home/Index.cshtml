@@ -9,11 +9,9 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <link href="~/css/bootstrap/css/bootstrap.css" rel="stylesheet" />
     <style>
-        input{width:50px; height:50px}
-        #zero{width:102px}
-        #igual{height:102px}
-        #introducao{width:254px}
+        input {width:40px;height:40px;}
     </style>
 </head>
 <body>
@@ -21,71 +19,71 @@
         <h1 style="color:red">Calculadora completa</h1>
 
         <form method="post">
-            <table border="1" cellspacing="0" cellpadding="0">
+            <table style="border-spacing:5px; border-collapse:collapse; border:1px solid #808080">
                 <tr>
                     <td colspan="5">
-                        <input value = "@ViewBag.Display" id="introducao" type="text" name="display" readonly="readonly" /> 
+                        <input style="height:30px; width:213px; text-align:right;" class="form-control" value = "@ViewBag.Display" id="introducao" type="text" name="display" readonly="readonly" /> 
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="submit" value="7" name="bt" />
+                        <input type="submit" value="7" name="bt" class="btn"/>
                     </td>
                     <td>
-                        <input type="submit" value="8" name="bt" />
+                        <input type="submit" value="8" name="bt" class="btn"/>
                     </td>
                     <td>
-                        <input type="submit" value="9" name="bt" />
+                        <input type="submit" value="9" name="bt" class="btn"/>
                     </td>
                     <td>
-                        <input type="submit" value=":" name="bt" />
+                        <input type="submit" value=":" name="bt" class="btn"/>
                     </td>
                     <td>
-                        <input type="submit" value="+/-" name="bt" />
+                        <input type="submit" value="+/-" name="bt" class="btn"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="submit" value="4" name="bt" />
+                        <input type="submit" value="4" name="bt" class="btn"/>
                     </td>
                     <td>
-                        <input type="submit" value="5" name="bt" />
+                        <input type="submit" value="5" name="bt" class="btn"/>
                     </td>
                     <td>
-                        <input type="submit" value="6" name="bt" />
+                        <input type="submit" value="6" name="bt" class="btn"/>
                     </td>
                     <td>
-                        <input type="submit" value="X" name="bt" />
+                        <input type="submit" value="X" name="bt" class="btn"/>
                     </td>
                     <td>
-                        <input type="submit" value="C" name="bt" />
+                        <input type="submit" value="C" name="bt" class="btn-danger"/>
                 </tr>
                 <tr>
                     <td>
-                        <input type="submit" value="1" name="bt" />
+                        <input type="submit" value="1" name="bt" class="btn"/>
                     </td>
                     <td>
-                        <input type="submit" value="2" name="bt" />
+                        <input type="submit" value="2" name="bt" class="btn"/>
                     </td>
                     <td>
-                        <input type="submit" value="3" name="bt" />
+                        <input type="submit" value="3" name="bt" class="btn"/>
                     </td>
                     <td>
-                        <input type="submit" value="-" name="bt" />
+                        <input type="submit" value="-" name="bt" class="btn"/>
                     </td>
                     <td rowspan="2">
-                        <input id="igual" type="submit" value="=" name="bt" />
+                        <input type="submit" value="=" name="bt" class="btn-success" style="height:82px"/>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <input id="zero" type="submit" value="0" name="bt" />
+                        <input type="submit" value="0" name="bt" class="btn" style="width:82px"/>
                     </td>
                     <td>
-                        <input type="submit" value="," name="bt" />
+                        <input type="submit" value="," name="bt" class="btn"/>
                     </td>
                     <td>
-                        <input type="submit" value="+" name="bt" />
+                        <input type="submit" value="+" name="bt" class="btn"/>
                     </td>
                 </tr>
             </table>
