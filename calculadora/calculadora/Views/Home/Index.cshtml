@@ -9,16 +9,22 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <style>
+        input{width:50px; height:50px}
+        #zero{width:102px}
+        #igual{height:102px}
+        #introducao{width:254px}
+    </style>
 </head>
 <body>
     <div>
         <h1 style="color:red">Calculadora completa</h1>
 
         <form method="post">
-            <table boder="1">
+            <table border="1" cellspacing="0" cellpadding="0">
                 <tr>
                     <td colspan="5">
-                        <input type="text" name="display" readonly/>
+                        <input id="introducao" type="text" name="display" readonly />
                     </td>
                 </tr>
                 <tr>
@@ -66,6 +72,20 @@
                     </td>
                     <td>
                         <input type="submit" value="-" name="bt" />
+                    </td>
+                    <td rowspan="2">
+                        <input id="igual" type="submit" value="=" name="bt" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input id="zero" type="submit" value="0" name="bt" />
+                    </td>
+                    <td>
+                        <input type="submit" value="," name="bt" />
+                    </td>
+                    <td>
+                        <input type="submit" value="+" name="bt" />
                     </td>
                 </tr>
             </table>
